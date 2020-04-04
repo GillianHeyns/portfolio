@@ -7,37 +7,78 @@
     transition-duration: 1s;
 }
 
-.carousel{
-    margin-top: 50px;
-}
-.carousel-inner{
-    height: 100px;
-}
-.carousel-caption{
-    color: black;
-    top: 50%;
-}
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    height: 100px;
-    width: 100px;
-    outline: black;
-    background-size: 100%, 100%;
-    border-radius: 50%;
-    border: 1px solid black;
-    background-image: none;
-}
+nav > .nav.nav-tabs{
+    font-weight: bold;
+    border: none;
+    color:#fff;
+    background:#212529;
+    border-radius:0;
 
-.carousel-control-next-icon:after
+}
+nav > div a.nav-item.nav-link,
+nav > div a.nav-item.nav-link.active
 {
-    content: '>';
-    font-size: 55px;
-    color: #fed336;
+    border: none;
+    padding: 18px 25px;
+    color:#fff;
+    background:#212529;
+    border-radius:0;
 }
 
-.carousel-control-prev-icon:after {
-    content: '<';
-    font-size: 55px;
-    color: #fed336;
+nav > div a.nav-item.nav-link.active:after
+{
+    content: "";
+    position: relative;
+    bottom: -60px;
+    left: -10%;
+    border: 15px solid transparent;
+    border-top-color: #fed136 ;
+}
+.tab-content{
+    background: #fdfdfd;
+    line-height: 25px;
+    border: 1px solid #ddd;
+    border-top:5px solid #fed136;
+    border-bottom:5px solid #fed136;
+    padding:30px 25px;
+}
+
+.tab-pane {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav > div a.nav-item.nav-link:hover,
+nav > div a.nav-item.nav-link:focus
+{
+    border: none;
+    background: #fed136;
+    color:#212529;
+    border-radius:0;
+    transition:background 0.20s linear;
+}
+
+.bodem {
+    padding-bottom: 80px;
+    font-size: 40px;
+}
+
+label {
+    color: white;
+}
+
+.opmaak_link {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.opmaak_link:hover {
+    color: #fec92e;
+    text-decoration: none;
+}
+
+.foto {
+    margin-top: 86px;
 }
